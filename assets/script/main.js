@@ -26,6 +26,7 @@ form.addEventListener("submit", (e)=>{
 
 window.addEventListener("online", ()=>{
     console.log("online");
+    window.location.reload();
 })
 
 window.addEventListener("offline",()=>{
