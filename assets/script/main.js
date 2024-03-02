@@ -24,11 +24,12 @@ form.addEventListener("submit", (e)=>{
     }
 })
 
-window.addEventListener("online", ()=>{
-    console.log("online");
+window.addEventListener("online", (e)=>{
+    e.preventDefault();
     window.location.reload();
+    console.log("online");
 })
 
 window.addEventListener("offline",()=>{
-    document.querySelector("body").innerHTML ="Your are currently offline";
+    document.querySelector("body").innerHTML ="<h1>Your are currently offline</h1>";
 })
