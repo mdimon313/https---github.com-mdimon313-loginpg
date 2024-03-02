@@ -24,12 +24,31 @@ form.addEventListener("submit", (e)=>{
     }
 })
 
+    // if (window.innerWidth < 768) {
+    //     console.log("winsow "+ window.innerWidth);
+    //     document.querySelector(".container").style.width = "100%";
+    // } else {
+    //     console.log(window.innerWidth)
+    //     document.querySelector(".container").style.width = "30%";
+    // }
+
+
+var p, l;
+window.addEventListener("load",()=>{
+    if (navigator.onLine) {
+        p = navigator.platform;
+        l = navigator.language;
+        console.log(p);
+        console.log(l);
+    }
+    
+})
 window.addEventListener("online", (e)=>{
     e.preventDefault();
     window.location.reload();
     console.log("online");
 })
 
-window.addEventListener("offline",()=>{
+    window.addEventListener("offline",()=>{
     document.querySelector("body").innerHTML ="<h1>Your are currently offline</h1>";
 })
