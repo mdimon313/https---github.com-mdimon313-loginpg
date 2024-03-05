@@ -1,1 +1,4 @@
-print("hello python");
+x = ["hello", "world"]
+x.append("python")
+for i in x:
+    print(i)

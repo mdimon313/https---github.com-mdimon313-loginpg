@@ -33,8 +33,15 @@ form.addEventListener("submit", (e)=>{
     // }
 
 
+    window.addEventListener("unload",()=>{
+        document.querySelector('.load').style.display = "block";
+    })
+
+
 var p, l;
 window.addEventListener("load",()=>{
+    document.querySelector('.load').style.display = "none";
+
     if (navigator.onLine) {
         p = navigator.platform;
         l = navigator.language;
