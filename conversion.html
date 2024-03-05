@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid #333;
+            height: 800px;
+            overflow: hidden;
+        }
+        .wrapper{
+            display: flex;
+            overflow: hidden;
+        }
+        .side_bar {
+            background-color: #060f31;
+            color: #fff;
+            flex-grow: 1;
+            padding: 1rem;
+            /* overflow-y: scroll; */
+        }
+        .profile {
+            background-color: #6b6b6b;
+            border-radius: 5px;
+            padding: 10px;
+            font-family: sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .profile .profile_pic {
+            width: 70px;
+            height: 70px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+        .side_bar ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            height:700px;
+            overflow-y: scroll;
+        }
+
+        .side_bar ul::-webkit-scrollbar{
+            display: none;
+        }
+
+        .side_bar ul > li {
+            background-color: #bfbfbf;
+            color: #333;
+            border-radius: 5px;
+            padding: 0.5rem 0.8rem;
+            margin: 0.6rem 0;
+            cursor: pointer;
+            font-weight: 700;
+            font-family: sans-serif;
+            text-transform: capitalize;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.5 ease-in-out;
+        }
+        #indcator {
+            background-color: #08b608;
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+
+        #img{
+            width: 60px;
+            height: 60px;
+            background-color: #333;
+            display: inline-block;
+            border-radius: 50%;
+        }
+
+        .side_bar ul > li:hover{
+            background-color: #a1a1a1;
+        }
+
+        .main_content {
+            background-color: #0c0c0c;
+            /* flex: 1; */
+            flex-grow: 5;
+            /* flex-shrin1k: 100; */
+            height: 800px;
+            padding: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <main id="main" class="main">
+        <div class="wrapper">
+            <div class="side_bar" id="sideBar">
+                <div class="profile">
+                    <div class="profile_pic"></div>
+                    <div class="info">
+                        <h2>Jahangir Alam Imon</h2>
+                        <div class="status">Active now<span id="indcator"></span></div>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <div class="profile_img">
+                            <span id="img"></span> 
+                        </div>
+                        
+                        M A Mosaddik<span id="indcator"></span> </li>
+                    <li><span id="img"></span> Yasin Abir<span id="indcator"></span> </li>
+                    <li><span id="img"></span> Niamul Haque Siyam<span id="indcator"></span> </li>
+                    <li><span id="img"></span> Abu Ishaq Nirob<span id="indcator"></span> </li>
+                    <li><span id="img"></span> Yasin Arafat<span id="indcator"></span> </li>
+                    <li><span id="img"></span> Niamul Haque Siyam<span id="indcator"></span> </li>
+                    <li><span id="img"></span> Abu Ishaq Nirob<span id="indcator"></span> </li>
+                    <li><span id="img"></span> Yasin Arafat<span id="indcator"></span> </li>
+                    <li><span id="img"></span> Niamul Haque Siyam<span id="indcator"></span> </li>
+                    <li><span id="img"></span> Abu Ishaq Nirob<span id="indcator"></span> </li>
+                    <li><span id="img"></span> Yasin Arafat<span id="indcator"></span> </li>
+
+                    <li><span id="img"></span> Abu Ishaq Nirob<span id="indcator"></span> </li>
+                    <li><span id="img"></span> Yasin Arafat<span id="indcator"></span> </li>
+                </ul>
+            </div>
+            <div class="main_content" id="mainContent"></div>
+        </div>
+    </main>
+    
+</body>
+</html>
